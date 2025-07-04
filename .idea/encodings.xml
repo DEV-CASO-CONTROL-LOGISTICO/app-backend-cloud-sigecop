@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/SpringSigecopAuth/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SpringSigecopConfig/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SpringSigecopEureka/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SpringSigecopGateway/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SpringSigecopMaintenance/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SpringSigecopOrder/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SpringSigecopRequest/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/resources" charset="UTF-8" />
+  </component>
+</project>
