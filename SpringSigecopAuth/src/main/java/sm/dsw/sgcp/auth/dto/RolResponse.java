@@ -5,7 +5,7 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import sm.dsw.sgcp.auth.model.Rol;
-import sm.dsw.sgcp.auth.util.Constants;
+import sm.dsw.sgcp.util.Constants;
 import sm.dsw.sgcp.util.clase.DtoGeneric;
 
 import java.util.ArrayList;

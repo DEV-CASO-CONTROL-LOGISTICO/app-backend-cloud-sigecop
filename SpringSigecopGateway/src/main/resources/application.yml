@@ -1,3 +1,5 @@
+jwt:
+  secret: rlwAehxP/vA1hLRRouPqSaT1/+mo1RCWQ++pd/JjeWg=
 spring:
   application:
     name: SpringSigecopGateway

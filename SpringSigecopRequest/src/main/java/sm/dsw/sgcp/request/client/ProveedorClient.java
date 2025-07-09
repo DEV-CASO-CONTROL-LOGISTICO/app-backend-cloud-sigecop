@@ -1,14 +1,11 @@
-package sm.dsw.sgcp.auth.client;
+package sm.dsw.sgcp.request.client;
 
 import org.springframework.cloud.openfeign.FeignClient;
-import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
-import sm.dsw.sgcp.auth.dto.ProveedorDTO;
-import sm.dsw.sgcp.auth.util.FeignClientConfig;
+import sm.dsw.sgcp.request.http.response.ProveedorDTO;
+import sm.dsw.sgcp.request.util.FeignClientConfig;
 import sm.dsw.sgcp.util.clase.RequestBase;
-
-import java.util.List;
 
 @FeignClient(name="SpringSigecopMaintenance",url="localhost:8080", configuration = FeignClientConfig.class)
 public interface ProveedorClient {

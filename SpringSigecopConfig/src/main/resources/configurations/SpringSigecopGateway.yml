@@ -10,21 +10,53 @@ spring:
         locator:
           enabled: true
       routes:
-        - id: maintenance
-          uri: 'http://localhost:9090'
+        # Rutas del microservicio en localhost:9090
+        - id: categoria
+          uri: http://localhost:9090
           predicates:
             - Path=/api/v1/categoria/**
+
+        - id: producto
+          uri: http://localhost:9090
+          predicates:
             - Path=/api/v1/producto/**
+
+        - id: proveedor
+          uri: http://localhost:9090
+          predicates:
             - Path=/api/v1/proveedor/**
+
+        - id: tipo-internamiento
+          uri: http://localhost:9090
+          predicates:
             - Path=/api/v1/tipoInternamiento/**
-        - id: auth
-          uri: 'http://localhost:9091'
+
+        # Rutas del microservicio en localhost:9091
+        - id: session
+          uri: http://localhost:9091
           predicates:
             - Path=/api/v1/session/**
+
+        - id: pagina
+          uri: http://localhost:9091
+          predicates:
             - Path=/api/v1/pagina/**
+
+        - id: permiso
+          uri: http://localhost:9091
+          predicates:
             - Path=/api/v1/permiso/**
+
+        - id: rol
+          uri: http://localhost:9091
+          predicates:
             - Path=/api/v1/rol/**
+
+        - id: usuario
+          uri: http://localhost:9091
+          predicates:
             - Path=/api/v1/usuario/**
+
 eureka:
   client:
     register-with-eureka: false

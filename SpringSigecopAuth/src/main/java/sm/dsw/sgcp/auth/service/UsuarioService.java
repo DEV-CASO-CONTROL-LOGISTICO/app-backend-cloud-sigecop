@@ -148,10 +148,12 @@ public class UsuarioService extends ServiceGeneric<UsuarioResponse, UsuarioReque
 
     @Override
     public UsuarioResponse convertReturnObject(Usuario record){
-        RequestBase rb=new RequestBase();
-        rb.setId(record.getProveedorId());
         UsuarioResponse rec=UsuarioResponse.fromEntity(record,UsuarioResponse.class);
-        rec.setProveedor(proveedorClient.findById(rb));
+        if(record.getProveedorId()!=null){
+            RequestBase rb=new RequestBase();
+            rb.setId(record.getProveedorId());
+            rec.setProveedor(proveedorClient.findById(rb));
+        }
         return rec;
     }
 
@@ -160,11 +162,7 @@ public class UsuarioService extends ServiceGeneric<UsuarioResponse, UsuarioReque
         List<UsuarioResponse> list= new ArrayList<>();
         if(result!=null){
             for(Usuario temp: result){
-                RequestBase rb=new RequestBase();
-                rb.setId(temp.getProveedorId());
-                UsuarioResponse rec=UsuarioResponse.fromEntity(temp,UsuarioResponse.class);
-                rec.setProveedor(proveedorClient.findById(rb));
-                list.add(rec);
+                list.add(convertReturnObject(temp));
             }
         }
         return list;
