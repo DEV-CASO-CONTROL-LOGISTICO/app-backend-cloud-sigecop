@@ -49,6 +49,7 @@
     <module>SpringSigecopMaintenance</module>
     <module>SpringSigecopRequest</module>
     <module>SpringSigecopOrder</module>
+    <module>Utilitarios</module>
   </modules>
 
 </project>

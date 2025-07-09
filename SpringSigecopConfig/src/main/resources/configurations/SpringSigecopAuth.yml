@@ -1,0 +1,20 @@
+server:
+  port: 9091
+
+spring:
+  application:
+    name: SpringSigecopAuth
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://ep-broad-lab-a8nkb6aj-pooler.eastus2.azure.neon.tech:5432/SIGECOP_AUTH
+    username: SIGECOP_owner
+    password: npg_k9OIUaTKfY0w
+  jpa:
+    hibernate:
+
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka

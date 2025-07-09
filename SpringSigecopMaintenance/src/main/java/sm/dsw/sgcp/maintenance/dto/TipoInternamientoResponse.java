@@ -1,0 +1,29 @@
+package sm.dsw.sgcp.maintenance.dto;
+
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+import sm.dsw.sgcp.maintenance.model.TipoInternamiento;
+import sm.dsw.sgcp.util.clase.DtoGeneric;
+
+@Data
+@Builder
+@NoArgsConstructor
+@AllArgsConstructor
+public class TipoInternamientoResponse extends DtoGeneric<TipoInternamiento,TipoInternamientoResponse> {
+
+    private Integer id;
+    private String nombre;
+    private String descripcion;
+    private Boolean valorDefecto;
+
+    @Override
+    protected TipoInternamientoResponse mapEntityToDto(TipoInternamiento entity, TipoInternamientoResponse dto) {
+        dto.setId(entity.getId());
+        dto.setNombre(entity.getNombre());
+        dto.setDescripcion(entity.getDescripcion());
+        dto.setValorDefecto(entity.getValorDefecto());
+        return dto;
+    }
+}

@@ -10,6 +10,7 @@
         <module name="SpringSigecopMaintenance" />
         <module name="SpringSigecopEureka" />
         <module name="SpringSigecopOrder" />
+        <module name="Utilitarios" />
         <module name="SpringSigecopConfig" />
         <module name="SpringSigecopGateway" />
         <module name="SpringSigecopRequest" />
@@ -25,6 +26,7 @@
       <module name="SpringSigecopMaintenance" options="-parameters" />
       <module name="SpringSigecopOrder" options="-parameters" />
       <module name="SpringSigecopRequest" options="-parameters" />
+      <module name="Utilitarios" options="-parameters" />
     </option>
   </component>
 </project>

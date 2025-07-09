@@ -1,0 +1,30 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: SpringSigecopGateway
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+      routes:
+        - id: maintenance
+          uri: 'http://localhost:9090'
+          predicates:
+            - Path=/api/v1/categoria/**
+            - Path=/api/v1/producto/**
+            - Path=/api/v1/proveedor/**
+            - Path=/api/v1/tipoInternamiento/**
+        - id: auth
+          uri: 'http://localhost:9091'
+          predicates:
+            - Path=/api/v1/session/**
+            - Path=/api/v1/pagina/**
+            - Path=/api/v1/permiso/**
+            - Path=/api/v1/rol/**
+            - Path=/api/v1/usuario/**
+eureka:
+  client:
+    register-with-eureka: false

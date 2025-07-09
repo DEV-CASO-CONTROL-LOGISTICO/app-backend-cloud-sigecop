@@ -1,3 +1,7 @@
+jwt:
+  secret: rlwAehxP/vA1hLRRouPqSaT1/+mo1RCWQ++pd/JjeWg=
 spring:
   application:
     name: SpringSigecopAuth
+  config:
+    import: optional:configserver:http://localhost:8888
