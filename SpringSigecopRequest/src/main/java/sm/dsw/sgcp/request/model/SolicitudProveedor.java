@@ -21,7 +21,7 @@ import sm.dsw.sgcp.util.clase.AuditBase;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-@Table(name = "solicitud_proveedor", schema = "gestion")
+@Table(name = "solicitud_proveedor")
 public class SolicitudProveedor extends AuditBase {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

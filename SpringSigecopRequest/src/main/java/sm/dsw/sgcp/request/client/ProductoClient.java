@@ -8,7 +8,7 @@ import sm.dsw.sgcp.request.http.response.ProveedorDTO;
 import sm.dsw.sgcp.request.util.FeignClientConfig;
 import sm.dsw.sgcp.util.clase.RequestBase;
 
-@FeignClient(name="SpringSigecopMaintenance",url="localhost:8080", configuration = FeignClientConfig.class)
+@FeignClient(name="SpringSigecopMaintenanceProducto",url="localhost:8080", configuration = FeignClientConfig.class)
 public interface ProductoClient {
     @PostMapping("/api/v1/producto/find")
     ProductoDTO findById(@RequestBody RequestBase course);

@@ -26,7 +26,7 @@ import sm.dsw.sgcp.util.clase.AuditBase;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-@Table(name = "cotizacion_producto", schema = "gestion")
+@Table(name = "cotizacion_producto")
 /**
  *
  * @author jhochuq

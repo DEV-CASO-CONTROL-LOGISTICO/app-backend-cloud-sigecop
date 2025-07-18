@@ -57,6 +57,22 @@ spring:
           predicates:
             - Path=/api/v1/usuario/**
 
+        # Rutas del microservicio en localhost:9092
+        - id: cotizacion
+          uri: http://localhost:9092
+          predicates:
+            - Path=/api/v1/cotizacion/**
+
+        - id: estadosolicitud
+          uri: http://localhost:9092
+          predicates:
+            - Path=/api/v1/estado_solicitud/**
+
+        - id: solicitud
+          uri: http://localhost:9092
+          predicates:
+            - Path=/api/v1/solicitud/**
+
 eureka:
   client:
     register-with-eureka: false

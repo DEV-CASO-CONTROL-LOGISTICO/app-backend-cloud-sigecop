@@ -22,7 +22,7 @@ import sm.dsw.sgcp.util.clase.AuditBase;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-@Table(name = "estado_cotizacion", schema = "gestion")
+@Table(name = "estado_cotizacion")
 public class EstadoCotizacion extends AuditBase {
 
     @Id
